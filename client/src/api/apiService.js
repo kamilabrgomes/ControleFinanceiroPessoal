@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/transaction';
+const API_URL = 'https://kamila-desafio-final.herokuapp.com/api/transaction';
 
 async function getAllTransactions(yearMonth) {
   const res = await axios.get(`${API_URL}/${yearMonth}`);
