@@ -25,8 +25,6 @@ export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalNewOpen, setIsModalNewOpen] = useState(false);
 
-  console.log(currentPeriod);
-
   const getTransactions = async () => {
     const transactions = await api.getAllTransactions(currentPeriod);
     setTimeout(() => {
@@ -124,7 +122,6 @@ export default function App() {
   };
 
   const handlePersistNewData = async (formData) => {
-    console.log(formData);
     const isInserted = await api.insertTransaction(formData);
     if (isInserted) {
       getTransactions();

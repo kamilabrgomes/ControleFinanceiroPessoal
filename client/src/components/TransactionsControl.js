@@ -66,8 +66,6 @@ export default function TransactionsControl({
     const filtered = transactions.filter((transaction) => {
       return transaction.descriptionFilter.includes(filterToLowerCase);
     });
-
-    console.log(filtered);
     setFilteredTransactions(filtered);
   };
   return (

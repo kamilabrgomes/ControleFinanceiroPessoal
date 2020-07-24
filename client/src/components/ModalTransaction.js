@@ -91,7 +91,6 @@ export default function ModalTransaction({
   const handleYearMonthDayChange = (event) => {
     setTransactionYearMonthDay(event.target.value);
   };
-  console.log(transactionType);
   return (
     <div>
       <Modal style={customStyles} isOpen={true}>
